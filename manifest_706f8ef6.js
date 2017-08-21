@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="http://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"><title>Webpack App</title><link rel="stylesheet" type="text/css" href="./app_36482d82.css"><div id="app"><router-view></router-view></div><script src="http://cdn.bootcss.com/modernizr/2.6.2/modernizr.min.js"></script></head><body></body><script src="http://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script><script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script>/******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["webpackJsonp"];
 /******/ 	window["webpackJsonp"] = function webpackJsonpCallback(chunkIds, moreModules) {
@@ -97,7 +97,7 @@
 /******/ 			script.charset = 'utf-8';
 /******/ 			script.async = true;
 
-/******/ 			script.src = __webpack_require__.p + "" + ({"0":"app","7":"waypoints"}[chunkId]||chunkId) + "_" + {"0":"36482d82","1":"178461bc","2":"f506ff77","3":"598f3e00","4":"443a519f","5":"34ed7898","6":"8ea3130f","7":"8214165a"}[chunkId] + ".js";
+/******/ 			script.src = __webpack_require__.p + "" + ({"0":"app","7":"waypoints"}[chunkId]||chunkId) + "_" + {"0":"aacab527","1":"178461bc","2":"f506ff77","3":"598f3e00","4":"443a519f","5":"34ed7898","6":"8ea3130f","7":"8214165a"}[chunkId] + ".js";
 /******/ 			head.appendChild(script);
 /******/ 		}
 /******/ 	};
@@ -135,4 +135,4 @@
 		}
 	}
 	return modules;
-}([])));</script><script type="text/javascript" src="./waypoints_8214165a.js"></script><script type="text/javascript" src="./app_36482d82.js"></script><script src="http://cdn.bootcss.com/stellar.js/0.6.2/jquery.stellar.min.js"></script></html>
+}([])));
