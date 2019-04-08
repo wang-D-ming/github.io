@@ -1,19 +1,19 @@
 # 前端开发规范
-##一、命名规则
+## 一、命名规则
 
-###1、文件命名
+### 1、文件命名
 
 文件夹/文件的命名统一用小写
 
 保证项目有良好的可移植性，可跨平台 
 
-###2、文件引用路径
+### 2、文件引用路径
 
 因为文件命名统一小写，引用也需要注意大小写问题
 
-###3、js变量
+### 3、js变量
 
-3.1 变量
+##### 3.1 变量
 
 命名方式：小驼峰
 
@@ -31,7 +31,7 @@ let tableTitle = 'LoginTable';
 let setCount = 10;
 let getTitle = 'LoginTable';
 ```
-3.2 常量
+##### 3.2 常量
 
 命名方式：全部大写
 
@@ -44,7 +44,7 @@ let getTitle = 'LoginTable';
 const MAX_COUNT = 10;
 const URL = 'http://www.foreverz.com';
 ```
-3.3 函数
+##### 3.3 函数
 
 命名方式：小驼峰式命名法。
 
@@ -67,7 +67,7 @@ function getName(): string {
 
 }
 ```
-3.4 类、构造函数
+##### 3.4 类、构造函数
 
 命名方式：大驼峰式命名法，首字母大写
 
@@ -127,7 +127,7 @@ person.setName('mervyn');
 person.getName(); // ->mervyn
 const person = new Person('mevyn');
 ```
-3.5 css（class、id）命名规则BEM
+##### 3.5 css（class、id）命名规则BEM
 
 我们还是使用大团队比较常用的BEM模式
 
@@ -143,6 +143,10 @@ block 代表了更高级别的抽象或组件
 block__element 代表 block 的后代，用于形成一个完整的 block 的整体
 block--modifier代表 block 的不同状态或不同版本
 ```
+******
+## 二、代码书写规则
+###### 我们通过引入 [eslint](https://cn.eslint.org) 来强制开发人员来遵守这些规范
+以下是eslint的配置，可通过实际场景进行调整
 - [no-cond-assign](https://cn.eslint.org/docs/rules/no-cond-assign) 禁止条件表达式中出现赋值操作符
 - [no-constant-condition](https://cn.eslint.org/docs/rules/no-constant-condition) 禁止在条件中使用常量表达式
 - [no-control-regex](https://cn.eslint.org/docs/rules/no-control-regex) 禁止在正则表达式中使用控制字符
