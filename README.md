@@ -127,7 +127,7 @@ person.setName('mervyn');
 person.getName(); // ->mervyn
 const person = new Person('mevyn');
 ```
-##### 3.5 css（class、id）命名规则BEM
+##### 3.5 css（class、id）命名规则 BEM  [什么是BEM](https://www.w3cplus.com/css/bem-definitions.html)
 
 我们还是使用大团队比较常用的BEM模式
 
@@ -144,9 +144,26 @@ block__element 代表 block 的后代，用于形成一个完整的 block 的整
 block--modifier代表 block 的不同状态或不同版本
 ```
 ******
-## 二、代码书写规则
-###### 我们通过引入 [eslint](https://cn.eslint.org) 来强制开发人员来遵守这些规范
-以下是eslint的配置，可通过实际场景进行调整
+## 二、注释
+>>>通用约定
+-As short as possible（如无必要，勿增注释）：尽量提高代码本身的清晰性、可读性
+-As long as necessary（如有必要，尽量详尽）：合理的注释、空行排版等，可以让代码更易阅读、更具美感。
+### 1.单行注释
+必须独占一行。// 
+### 2.多行注释
+避免使用 /…/ 这样的多行注释。有多行注释内容时，使用多个单行注释。
+### 3.函数/方法注释
+函数/方法注释必须包含函数说明，有参数和返回值时必须使用注释标识。
+参数和返回值注释必须包含类型信息和说明。
+当函数是内部函数，外部不可访问时，可以使用 @inner 标识。
+!(http://t10.baidu.com/it/u=3398736120,2228077874&fm=173&app=25&f=JPEG?w=640&h=346&s=E8E293419AE0C76C5E55AC070000E0C2)
+### 3.文件注释
+文件注释用于告诉不熟悉这段代码的读者这个文件中包含哪些东西。 应该提供文件的大体内容, 它的作者, 依赖关系和兼容性信息。如下:
+!(http://t12.baidu.com/it/u=4252315511,2210172304&fm=173&app=25&f=JPEG?w=639&h=143&s=E8F2A243CEA0B5724E5DCC0F0000B0C2)
+******
+## 三、代码书写规则
+##### 我们通过引入 [eslint](https://cn.eslint.org) 来强制开发人员来遵守这些规范
+以下是eslint的配置以及相关需要准守的书写规范，可通过实际场景进行调整
 - [no-cond-assign](https://cn.eslint.org/docs/rules/no-cond-assign) 禁止条件表达式中出现赋值操作符
 - [no-constant-condition](https://cn.eslint.org/docs/rules/no-constant-condition) 禁止在条件中使用常量表达式
 - [no-control-regex](https://cn.eslint.org/docs/rules/no-control-regex) 禁止在正则表达式中使用控制字符
